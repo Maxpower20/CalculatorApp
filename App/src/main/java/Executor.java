@@ -4,10 +4,6 @@ public class Executor {
 
     private Calculator calculator;
 
-    public Executor(Calculator calculator){
-        this.calculator = calculator;
-
-    }
 
     public void execute() throws IOException {
 
@@ -21,5 +17,7 @@ public class Executor {
 
     }
 
-
+    public void setCalculator(Calculator calculator) {
+        this.calculator = calculator;
+    }
 }

@@ -5,6 +5,6 @@
 
     <bean id = "calculator" class="Calculator"/>
     <bean id = "executor" class="Executor">
-        <constructor-arg name="calculator" ref="calculator"/>
+        <property name="calculator" ref="calculator"/>
     </bean>
 </beans>
